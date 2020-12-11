@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/design_default_color_secondary">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:background="@color/design_default_color_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="634.41dp"
+        android:layout_height="438.42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="48.07dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-179.44dp"
+        android:background="@drawable/rectangle_2"
+        />
+
+
+    <!-- drawable/rectangle_2.xml -->
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="634.41dp"
+        android:height="438.42dp"
+        android:viewportWidth="634.41"
+        android:viewportHeight="438.42"
+        >
+
+        <group>
+
+            <clip-path
+                android:pathData="M7 0H627.408C631.274 0 634.408 3.13401 634.408 7V431.42C634.408 435.286 631.274 438.42 627.408 438.42H7C3.13401 438.42 0 435.286 0 431.42V7C0 3.13401 3.13401 0 7 0Z"
+                />
+
+            <path
+                android:pathData="M0 0V438.42H634.408V0"
+                android:fillColor="#802F80ED"
+                />
+
+        </group>
+
+    </vector>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
