@@ -5,81 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/design_default_color_secondary">
+    android:background="@color/white">
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textNombre"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+  <ImageView
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/milk"
+      tools:layout_editor_absoluteX="80dp"
+      tools:layout_editor_absoluteY="135dp" />
 
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:hint="Nombre"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="159dp">
+  <Button
+      android:id="@+id/register_btn"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="Registrarse"
+      tools:layout_editor_absoluteX="105dp"
+      tools:layout_editor_absoluteY="618dp" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textEmail"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
-
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:hint="Email"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="237dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textPsswd"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
-
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:hint="Contrasena"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="336dp">
-
-
-        <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingresar"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="448dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="496dp" />
-
-
+  <Button
+      android:id="@+id/login_btn"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="Ingresar"
+      app:layout_alignParentBottom="true"
+      tools:layout_editor_absoluteX="105dp"
+      tools:layout_editor_absoluteY="560dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
