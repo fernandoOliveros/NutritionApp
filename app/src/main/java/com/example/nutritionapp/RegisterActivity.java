@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
@@ -37,7 +39,8 @@ public class RegisterActivity extends AppCompatActivity {
         //boton regresar(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
-
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#30EDF0"));
+        actionBar.setBackgroundDrawable(colorDrawable);
         nameText = findViewById(R.id.textName);
         emailText = findViewById(R.id.textEmail);
         psswdText = findViewById(R.id.textPsswd);
