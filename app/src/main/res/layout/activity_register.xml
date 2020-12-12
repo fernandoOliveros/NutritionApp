@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:background="@color/white">
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nameTIL"
         android:layout_centerInParent="true"
@@ -35,8 +36,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/textEmail"
             android:inputType="textEmailAddress"
-            android:hint="Nombre"/>
+            android:hint="Email"/>
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textFielPassword"
         android:layout_below="@id/textFieldEmail"
@@ -50,8 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textPsswd"
-            android:inputType="textEmailAddress"
-            android:hint="Nombre"/>
+            android:inputType="textPassword"
+            android:hint="contrasena"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
