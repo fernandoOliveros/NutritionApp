@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                 }else{
                     loginUser(email, password);
                 }
-
+                
             }
         });
         notHaveAccount.setOnClickListener(new View.OnClickListener() {
