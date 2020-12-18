@@ -23,6 +23,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText nameText, emailText, psswdText;
@@ -100,6 +104,24 @@ public class RegisterActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
 
                             FirebaseUser user = mAuth.getCurrentUser();
+                            String email = user.getEmail();
+                            String uid = user.getUid();
+
+                            HashMap<Object,String> hashMap = new HashMap<>();
+                            hashMap.put("email", email);
+                            hashMap.put("uid", uid);
+                            hashMap.put("name", "");
+                            hashMap.put("image", "");
+
+                            //creacion de la base de datos de Firebase
+                            FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+
+                            //para guardar  la informacioon de user
+                            DatabaseReference reference = firebaseDatabase.getReference("Users");
+
+                            reference.child(uid).setValue(hashMap);
+
+
                             progressDialog.dismiss();
                             Toast.makeText(RegisterActivity.this, "Registrado...\n" + user.getEmail(),Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(RegisterActivity.this,ProfileActivity.class));
