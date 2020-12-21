@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -124,7 +123,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                             progressDialog.dismiss();
                             Toast.makeText(RegisterActivity.this, "Registrado...\n" + user.getEmail(),Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(RegisterActivity.this,ProfileActivity.class));
+                                    startActivity(new Intent(RegisterActivity.this, DashboardActivity.class));
                                     finish();
 
                         } else {
