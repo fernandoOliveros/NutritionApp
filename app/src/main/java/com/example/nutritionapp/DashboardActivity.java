@@ -41,7 +41,12 @@ public class DashboardActivity extends AppCompatActivity {
 
 
         //default
-
+        actionBar.setTitle("Home");
+        HomeFragment fragment1 = new HomeFragment();
+        FragmentTransaction ft1 = getSupportFragmentManager().beginTransaction();
+        ft1.replace(R.id.content,fragment1,"");
+        ft1.commit();
+        navigationView.getMenu().getItem(1).setChecked(true);
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
