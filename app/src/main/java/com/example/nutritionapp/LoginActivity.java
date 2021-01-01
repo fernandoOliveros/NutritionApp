@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
     Button mLoginBtn;
     ProgressDialog progressDialog;
 
-    private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth; //variable para la instancia al FireBase
     //comentario para la parte normal
     @Override
     protected void onCreate(Bundle savedInstanceState) {
