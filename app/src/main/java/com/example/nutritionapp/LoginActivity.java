@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
 
     private FirebaseAuth mAuth;
-    //comentario del DON
+    //comentario para la parte normal
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
