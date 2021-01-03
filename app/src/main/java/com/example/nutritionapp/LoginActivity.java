@@ -35,8 +35,13 @@ public class LoginActivity extends AppCompatActivity {
     Button mLoginBtn;
     ProgressDialog progressDialog;
 
+<<<<<<< HEAD
     private FirebaseAuth mAuth; //variable para la instancia al FireBase
     //comentario para la parte normal
+=======
+    private FirebaseAuth mAuth;
+    //Prueba
+>>>>>>> main
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
