@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     Button btnRegister;
     Button btnLogin;
 
+
+
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
+
     }
 
 
