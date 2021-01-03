@@ -34,7 +34,6 @@ public class ProfileActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         mProfileTv = findViewById(R.id.profileTv);
-
     }
 
     private void checkUserStatus(){
