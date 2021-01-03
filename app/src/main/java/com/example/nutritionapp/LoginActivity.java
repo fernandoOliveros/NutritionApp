@@ -52,9 +52,17 @@ public class LoginActivity extends AppCompatActivity {
 =======
     SignInButton mGoogleLoginBtn;
 
+<<<<<<< HEAD
+    private FirebaseAuth mAuth; //variable para la instancia al FireBase
+    //comentario para la parte normal
+=======
     private FirebaseAuth mAuth;
+<<<<<<< HEAD
 
 
+=======
+    //Prueba
+>>>>>>> 2836d797254b026951cd399eaa8bb4804c0f2462
 >>>>>>> main
     @Override
     protected void onCreate(Bundle savedInstanceState) {
